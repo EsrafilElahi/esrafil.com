@@ -32,6 +32,8 @@ const getAll = async (req, res, next) => {
 
     // set caching
     redisClient.set('projects', JSON.stringify(projects));
+    const oneDay = parseInt((+new Date) / 1000) + 86400
+    redisClient.expireAt("projects", oneDay)
 
     return res.json({ message: "projects", status: 200, projects: projects })
 
