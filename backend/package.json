@@ -21,6 +21,7 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "nodemon": "^3.0.1",
     "prisma": "^5.3.1"
   }
 }
