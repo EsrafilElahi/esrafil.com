@@ -10,8 +10,45 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id Int @id @default(autoincrement())
-  name String
-  family String
+model Experience {
+  id              Int             @id @default(autoincrement())
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  startDate       DateTime
+  endDate         DateTime
+  title           String
+  description     String
+  corporation     String
+  cooperationType CooperationType @default(FULLTIME)
+  projects        Project[]
+
+  // @@unique([email])
+  // @@index([name, email, id], name: "allfieldsindex")
+}
+
+model Project {
+  id           Int          @id @default(autoincrement())
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  title        String
+  link         String
+  description  String
+  experience   Experience   @relation(fields: [experienceId], references: [id])
+  experienceId Int
+  technologies Technology[]
+}
+
+model Technology {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  name      String
+  Project   Project  @relation(fields: [projectId], references: [id])
+  projectId Int
+}
+
+enum CooperationType {
+  FULLTIME
+  PARTTIME
+  CONTRACT
 }
