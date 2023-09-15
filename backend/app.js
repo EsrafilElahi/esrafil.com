@@ -3,9 +3,9 @@ const path = require("path");
 const cors = require("cors");
 const cookieparser = require("cookie-parser");
 const session = require('express-session')
-// const passengerRoute = require("./routes/passenger");
+const experienceRoute = require("./routes/experience");
 const handleErrors = require("./middlewares/handleErrors")
-const setHeadersOrigin = require("./helpers/setHeadersOrigin");
+const setHeadersOrigin = require("./middlewares/setHeadersOrigin");
 const corsOrigin = require("./middlewares/corsOrigin");
 
 const app = express();
@@ -27,12 +27,12 @@ app.use(cors(corsOrigin));
 app.get("/", async (req, res, next) => {
   try {
     res.json({ msg: "Home Page" });
-  } catch (error) { 
+  } catch (error) {
     next(error)
   }
 });
 
-// app.use("/api/passengers", passengerRoute);
+app.use("/api/experience", experienceRoute);
 
 // 404 page
 app.get("*", (req, res) => {

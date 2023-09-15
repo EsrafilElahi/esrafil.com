@@ -1,7 +1,7 @@
 const handleErrors = (err, req, res, next) => {
   const status = err.status || 500;
   const message = err.message;
-  const errorData = err.data;
+  const errorData = err.data || null;
 
   return res.status(status).json({ "error data :": errorData, "error message :": message });
 };
