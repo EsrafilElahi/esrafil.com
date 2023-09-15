@@ -43,8 +43,8 @@ model Technology {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   name      String
-  Project   Project  @relation(fields: [projectId], references: [id])
-  projectId Int
+  Project   Project?  @relation(fields: [projectId], references: [id])
+  projectId Int?
 }
 
 enum CooperationType {
