@@ -1,6 +1,4 @@
 node_modules
-logs/combined.log
+logs
 *.log
 .env.example
-
-combined.log
