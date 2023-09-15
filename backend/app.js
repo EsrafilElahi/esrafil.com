@@ -6,7 +6,6 @@ const cookieparser = require("cookie-parser");
 const session = require('express-session');
 
 //* middlewares imports
-const handleErrors = require("./middlewares/handleErrors");
 const setHeadersOrigin = require("./middlewares/setHeadersOrigin");
 const corsOrigin = require("./middlewares/corsOrigin");
 
@@ -20,7 +19,6 @@ const app = express();
 //* middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(setHeadersOrigin);
-app.use(handleErrors);
 app.use(express.json());
 app.use(cookieparser());
 app.use(session({ secret: 'secret key', cookie: { maxAge: 60000 } }))
