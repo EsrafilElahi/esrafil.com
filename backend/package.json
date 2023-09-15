@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --env-file .env server.js"
+    "dev": "node --watch --env-file .env server.js"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +21,6 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
     "prisma": "^5.3.1"
   }
 }
