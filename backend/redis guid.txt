@@ -1,0 +1,4 @@
+pnpm add redis
+install redis on linux
+redis-server --> ready server
+redis-cli --> code redis cli

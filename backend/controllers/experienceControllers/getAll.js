@@ -1,4 +1,5 @@
 const prisma = require("../../prisma");
+const redisClient = require("../../redis")
 
 
 const getAll = async (req, res, next) => {
@@ -20,6 +21,9 @@ const getAll = async (req, res, next) => {
         }
       },
     });
+
+    // set data in cache
+    redisClient.set('experiences', experiences)
 
     return res.json({ message: "experiences", status: 200, experiences: experiences })
 
