@@ -2,8 +2,11 @@ const express = require("express");
 const path = require("path");
 const cors = require("cors");
 const cookieparser = require("cookie-parser");
+const session = require('express-session')
 // const passengerRoute = require("./routes/passenger");
+const handleErrors = require("./middlewares/handleErrors")
 const setHeadersOrigin = require("./helpers/setHeadersOrigin");
+const corsOrigin = require("./middlewares/corsOrigin");
 
 const app = express();
 const port = process.env.PROJECT_PORT || 5050;
@@ -11,15 +14,22 @@ const port = process.env.PROJECT_PORT || 5050;
 // middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(setHeadersOrigin);
+app.use(handleErrors);
 app.use(express.json());
 app.use(cookieparser());
-let publicDir = path.join(__dirname, "public");
-app.use(express.static(publicDir));
-app.use(cors());
+app.use(session({ secret: 'secret key', cookie: { maxAge: 60000 } }))
+app.use(cors(corsOrigin));
+
+// let publicDir = path.join(__dirname, "public");
+// app.use(express.static(publicDir));
 
 // routes
-app.get("/", async (req, res) => {
-  res.json({ msg: "Home Page" });
+app.get("/", async (req, res, next) => {
+  try {
+    res.json({ msg: "Home Page" });
+  } catch (error) { 
+    next(error)
+  }
 });
 
 // app.use("/api/passengers", passengerRoute);
