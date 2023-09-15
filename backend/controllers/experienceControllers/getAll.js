@@ -1,9 +1,11 @@
 const prisma = require("../../prisma");
-const redisClient = require("../../redis")
+const redisClient = require("../../redis");
+const logger = require("../../logger/index");
 
 
 const getAll = async (req, res, next) => {
   try {
+
     const experiences = await prisma.experience.findMany({
       select: {
         id: true,
@@ -22,12 +24,14 @@ const getAll = async (req, res, next) => {
       },
     });
 
-    // set data in cache
-    redisClient.set('experiences', experiences)
+    logger.info("fetching expereiences...");
 
+    // set caching
+    redisClient.set('experiences', JSON.stringify(experiences));
     return res.json({ message: "experiences", status: 200, experiences: experiences })
 
   } catch (error) {
+    logger.error(error)
     return res.json({ message: 'server error', status: 500, error: error })
   }
 
