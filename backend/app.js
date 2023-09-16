@@ -1,6 +1,8 @@
 //? root packages imports
 const express = require("express");
 const cors = require("cors");
+require('dotenv').config();
+
 
 //? middlewares imports
 const setHeadersOrigin = require("./middlewares/setHeadersOrigin");
