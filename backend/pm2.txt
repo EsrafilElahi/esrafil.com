@@ -1,0 +1,9 @@
+pm2 start server.js
+
+pm2 logs
+
+pm2 monit
+
+pm2 list
+pm2 status
+
