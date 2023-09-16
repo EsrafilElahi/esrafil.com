@@ -8,7 +8,7 @@ app.listen(port, (error) => {
   logger.info(`Server is running on port ${port}`);
   if (error) {
     redisClient.quit(() => {
-      console.log('Redis client disconnected');
+      logger.info('Redis client disconnected');
     });
   }
 });

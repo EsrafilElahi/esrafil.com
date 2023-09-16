@@ -1,14 +1,10 @@
 //? root packages imports
 const express = require("express");
 const cors = require("cors");
-const cookieparser = require("cookie-parser");
-const session = require('express-session');
 
 //? middlewares imports
 const setHeadersOrigin = require("./middlewares/setHeadersOrigin");
 const corsOrigin = require("./middlewares/corsOrigin");
-const redisClient = require("./redis");
-const logger = require("./logger/index");
 const { cachingExperiences, cachingProjects } = require("./middlewares/caching");
 
 //? routes imports
@@ -22,8 +18,6 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(setHeadersOrigin);
 app.use(express.json());
-app.use(cookieparser());
-app.use(session({ secret: 'secret key', cookie: { maxAge: 60000 } }))
 app.use(cors(corsOrigin));
 
 // * routes
