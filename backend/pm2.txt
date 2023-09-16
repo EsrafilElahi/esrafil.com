@@ -7,3 +7,10 @@ pm2 monit
 pm2 list
 pm2 status
 
+pm2 restart server.js --watch -f
+
+// clustering
+pm2 start app.js -i 4 -f
+pm2 list
+pm2 monit app
+
