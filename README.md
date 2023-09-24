@@ -24,3 +24,4 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - Eslint
 - React Query for caching
 - Axios for API requests
+- Unit testing, E2E testing
