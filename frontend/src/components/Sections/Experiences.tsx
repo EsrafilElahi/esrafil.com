@@ -3,10 +3,14 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import type { Project, Skill, Experience } from "../../../types.ts";
 
-type Props = {};
+type Props = {
+  experiences: Experience;
+};
 
 const Experiences = (props: Props) => {
+  const { experiences } = props;
 
   return (
     <VerticalTimeline>

@@ -5,7 +5,7 @@ import AboutMe from "./components/Sections/AboutMe";
 import Carousel from "./components/Carousel";
 import Skills from "./components/Sections/Skills.tsx";
 import Experiences from "./components/Sections/Experiences.tsx";
-import type { Project, Skill } from "../types.ts";
+import type { Project, Skill, Experience } from "../types.ts";
 
 const App = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -122,7 +122,7 @@ const App = () => {
     },
   ];
 
-  const experiences = [
+  const experiences: Experience[] = [
     {
       id: 1,
       startDate: "July 2019",
@@ -187,7 +187,7 @@ const App = () => {
       {/* Experiences */}
       <div className="p-5 mt-24 mb-10">
         <h2 className="title pb-7 relative lines">EXPERIENCES</h2>
-        <Experiences />
+        <Experiences experiences={experiences} />
       </div>
     </div>
   );

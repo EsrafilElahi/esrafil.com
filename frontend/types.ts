@@ -10,3 +10,12 @@ export interface Skill {
   icon: string;
   name: string;
 }
+
+export interface Experience {
+  id: number | string;
+  startDate: string;
+  endDate: string;
+  corp: string;
+  position: string;
+  desc: string;
+}
