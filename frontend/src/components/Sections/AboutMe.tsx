@@ -36,6 +36,7 @@ const AboutMe = forwardRef((props, ref) => {
           and
         </p>
         <p>debugging issues to create seamless user experiences</p>
+        <p>email : esrafil.elahi@gmail.com</p>
       </p>
     </div>
   );

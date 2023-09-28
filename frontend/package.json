@@ -20,7 +20,8 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-slick": "^0.29.0",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-vertical-timeline-component": "^3.6.0",
+    "vite-plugin-svgr": "^4.0.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^9.3.3",
