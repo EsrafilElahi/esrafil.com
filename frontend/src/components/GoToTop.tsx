@@ -7,7 +7,7 @@ const GoToTop = () => {
 
   return (
     <Arrow
-      className="w-8 h-8 cursor-pointer fixed bottom-[5%] right-10"
+      className="w-9 h-9 cursor-pointer fixed bottom-[10%] right-10"
       onClick={goToTop}
     />
   );
