@@ -1,7 +1,7 @@
-import React, { forwardRef, useRef, useImperativeHandle } from "react";
-import HeroSvg from "./components/HeroSvg";
+import React, { useRef } from "react";
+import HeroSvg from "./components/Sections/HeroSvg";
 import Title from "./components/Title";
-import AboutMe from "./components/AboutMe";
+import AboutMe from "./components/Sections/AboutMe";
 import Carousel from "./components/Carousel";
 
 const App = () => {
