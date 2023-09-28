@@ -27,7 +27,7 @@ const App = () => {
       <AboutMe ref={ref} />
 
       {/* Projects */}
-      <div className="p-5 my-10">
+      <div className="p-5 my-12">
         <h2 className="title">PROJECTS</h2>
         <Carousel />
       </div>

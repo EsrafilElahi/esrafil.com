@@ -16,7 +16,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-full my-10 p-10 overflow-hidden">
+    <div className="w-full p-10 overflow-hidden">
       <Slider {...settings}>
         <div>
           <h3 className="text-3xl text--[#000]">11111</h3>
