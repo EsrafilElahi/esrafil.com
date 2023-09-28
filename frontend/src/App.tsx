@@ -79,7 +79,7 @@ const App = () => {
       <AboutMe ref={ref} />
 
       {/* Projects */}
-      <div className="p-5 my-12">
+      <div className="p-5 my-24">
         <h2 className="title">PROJECTS</h2>
         <Carousel projects={projects} />
       </div>
