@@ -1,0 +1,28 @@
+/* fonts.css */
+@font-face {
+  font-family: "raj";
+  src: url("/fonts/Rajdhani-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "raj-bold";
+  src: url("/fonts/Rajdhani-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "raj-light";
+  src: url("/fonts/Rajdhani-Light.ttf") format("ttf");
+  font-weight: light;
+  font-style: light;
+}
+
+@font-face {
+  font-family: "raj-medium";
+  src: url("/fonts/Rajdhani-Medium.ttf") format("ttf");
+  font-weight: medium;
+  font-style: medium;
+}

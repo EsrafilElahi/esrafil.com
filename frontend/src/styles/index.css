@@ -1,3 +1,6 @@
+@import "fonts.css";
+@import url("./fonts.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,10 +13,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "raj";
 }
 
 html body {
   width: 100%;
   height: 100%;
   background-color: var(--body-bg);
+  font-family: "raj";
+  color: white;
 }
