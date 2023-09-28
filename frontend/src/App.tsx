@@ -3,7 +3,8 @@ import HeroSvg from "./components/Sections/HeroSvg";
 import Title from "./components/Title";
 import AboutMe from "./components/Sections/AboutMe";
 import Carousel from "./components/Carousel";
-import type { Project } from "../types.ts";
+import Skills from "./components/Sections/Skills.tsx";
+import type { Project, Skill } from "../types.ts";
 
 const App = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -57,6 +58,69 @@ const App = () => {
     },
   ];
 
+  const skills: Skill[] = [
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 2,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+    {
+      id: 1,
+      icon: "/assets/react.svg",
+      name: "React",
+    },
+  ];
+
   return (
     <div>
       {/* Hero */}
@@ -76,6 +140,12 @@ const App = () => {
       <div className="p-5 my-24">
         <h2 className="title">PROJECTS</h2>
         <Carousel projects={projects} />
+      </div>
+
+      {/* Skills */}
+      <div className="p-5 mb-24">
+        <h2 className="title pb-8">SKILLS</h2>
+        <Skills skills={skills} />
       </div>
     </div>
   );

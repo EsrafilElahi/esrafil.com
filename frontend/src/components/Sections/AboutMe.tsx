@@ -23,7 +23,7 @@ const AboutMe = forwardRef((props, ref) => {
       <p className="max-w-3xl text-center leading-8 tracking-wider">
         <p>As a dedicated and adaptable skillled frontend engineer</p>
         <p>
-          Graduated with a master's degree in computer engineering. Software
+          Graduated with a master's degree in computer engineering. software
           branch
         </p>
         <p>

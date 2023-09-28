@@ -24,7 +24,9 @@ const Carousel = (props: Props) => {
   return (
     <div className="w-full p-10 overflow-hidden">
       <Slider {...settings}>
-        {projects?.map((project) => <ProjectItem project={project} />)}
+        {projects?.map((project) => (
+          <ProjectItem key={project.id} project={project} />
+        ))}
       </Slider>
     </div>
   );
