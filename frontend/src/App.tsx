@@ -122,6 +122,41 @@ const App = () => {
     },
   ];
 
+  const experiences = [
+    {
+      id: 1,
+      startDate: "July 2019",
+      endDate: "Agu 2020",
+      corp: "Aytronik",
+      position: "frontend developer",
+      desc: "lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag",
+    },
+    {
+      id: 2,
+      startDate: "Agu 2020",
+      endDate: "Feb 2021",
+      corp: "Shams",
+      position: "frontend reactjs | nextjs | typescript developer",
+      desc: "lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag",
+    },
+    {
+      id: 3,
+      startDate: "Feb 2021",
+      endDate: "Mar 2022",
+      corp: "Avaaz Marketing",
+      position: "senior frontend developer",
+      desc: "lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag",
+    },
+    {
+      id: 4,
+      startDate: "Mar 2022",
+      endDate: "Sep 2023",
+      corp: "Avaaztech",
+      position: "senior frontend engineer",
+      desc: "lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag",
+    },
+  ];
+
   return (
     <div>
       {/* Hero */}
@@ -144,14 +179,14 @@ const App = () => {
       </div>
 
       {/* Skills */}
-      <div className="p-5 mb-24">
+      <div className="p-5 mt-24 mb-10">
         <h2 className="title pb-7 relative lines">SKILLS</h2>
         <Skills skills={skills} />
       </div>
 
       {/* Experiences */}
-      <div className="p-5 mb-24">
-        <h2 className="title pb-7 relative lines">Experiences</h2>
+      <div className="p-5 mt-24 mb-10">
+        <h2 className="title pb-7 relative lines">EXPERIENCES</h2>
         <Experiences />
       </div>
     </div>
