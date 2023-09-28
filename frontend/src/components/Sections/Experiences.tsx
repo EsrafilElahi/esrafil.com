@@ -1,9 +1,6 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import type { Project, Skill, Experience } from "../../../types.ts";
+import type { Experience } from "../../../types.ts";
 import ExperienceItem from "../ExperienceItem.tsx";
 
 type Props = {

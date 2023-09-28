@@ -5,6 +5,7 @@ import AboutMe from "./components/Sections/AboutMe";
 import Carousel from "./components/Carousel";
 import Skills from "./components/Sections/Skills.tsx";
 import Experiences from "./components/Sections/Experiences.tsx";
+import Footer from "./components/Footer.tsx";
 import type { Project, Skill, Experience } from "../types.ts";
 
 const App = () => {
@@ -127,7 +128,7 @@ const App = () => {
       id: 1,
       startDate: "July 2019",
       endDate: "Agu 2020",
-      corp: "Aytronik",
+      corp: "Aytronik corp",
       position: "frontend developer",
       desc: "lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag",
     },
@@ -135,7 +136,7 @@ const App = () => {
       id: 2,
       startDate: "Agu 2020",
       endDate: "Feb 2021",
-      corp: "Shams",
+      corp: "Shams uni",
       position: "frontend reactjs | nextjs | typescript developer",
       desc: "lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag",
     },
@@ -143,7 +144,7 @@ const App = () => {
       id: 3,
       startDate: "Feb 2021",
       endDate: "Mar 2022",
-      corp: "Avaaz Marketing",
+      corp: "Avaaz Marketing corp",
       position: "senior frontend developer",
       desc: "lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag",
     },
@@ -151,7 +152,7 @@ const App = () => {
       id: 4,
       startDate: "Mar 2022",
       endDate: "Sep 2023",
-      corp: "Avaaztech",
+      corp: "Avaaztech corp",
       position: "senior frontend engineer",
       desc: "lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag",
     },
@@ -189,6 +190,8 @@ const App = () => {
         <h2 className="title pb-7 relative lines">EXPERIENCES</h2>
         <Experiences experiences={experiences} />
       </div>
+
+      <Footer />
     </div>
   );
 };
