@@ -1,6 +1,7 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import type { Experience } from "../../types.ts";
+import Laptop from "/public/icons/laptop.svg?react";
 
 type Props = {
   experience: Experience;
@@ -16,6 +17,7 @@ const ExperienceItem = (props: Props) => {
       contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
       date={`${experience.startDate} - ${experience.endDate}`}
       iconStyle={{ background: "#8AABFF", color: "#fff" }}
+      icon={<Laptop />}
     >
       <h3 className="vertical-timeline-element-title text-xl font-bold tracking-wide">
         {experience.position}
