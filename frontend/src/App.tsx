@@ -2,6 +2,7 @@ import React, { forwardRef, useRef, useImperativeHandle } from "react";
 import HeroSvg from "./components/HeroSvg";
 import Title from "./components/Title";
 import AboutMe from "./components/AboutMe";
+import Carousel from "./components/Carousel";
 
 const App = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -24,6 +25,12 @@ const App = () => {
 
       {/* About Me */}
       <AboutMe ref={ref} />
+
+      {/* Projects */}
+      <div className="p-5 my-10">
+        <h2 className="title">PROJECTS</h2>
+        <Carousel />
+      </div>
     </div>
   );
 };

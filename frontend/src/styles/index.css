@@ -38,6 +38,9 @@
   .btn-outline {
     @apply py-2 px-5 border border-solid border-blue-light hover:border-blue transition-all rounded-md;
   }
+  .title {
+    @apply flex-center text-4xl mt-1 mb-5;
+  }
 }
 
 html body {
