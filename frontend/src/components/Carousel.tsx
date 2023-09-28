@@ -1,41 +1,36 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import Slider from "react-slick";
+import ProjectItem from "./ProjectItem";
 
-const Carousel = () => {
+interface Project {
+  id: number;
+  name: string;
+  url: string;
+  img: string;
+}
+
+type Props = {
+  projects: Project[];
+};
+
+const Carousel = (props: Props) => {
+  const { projects } = props;
+
   const settings = {
-    // dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 3000,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 10,
     cssEase: "linear",
   };
 
   return (
-    <div className="w-full p-10 overflow-hidden">
+    <div className="w-full px-10 pb-10 pt-5 overflow-hidden">
       <Slider {...settings}>
-        <div>
-          <h3 className="text-3xl text--[#000]">11111</h3>
-        </div>
-        <div>
-          <h3 className="text-3xl text--[#000]">2</h3>
-        </div>
-        <div>
-          <h3 className="text-3xl text--[#000]">3</h3>
-        </div>
-        <div>
-          <h3 className="text-3xl text--[#000]">4</h3>
-        </div>
-        <div>
-          <h3 className="text-3xl text--[#000]">5</h3>
-        </div>
-        <div>
-          <h3 className="text-3xl text--[#000]">6</h3>
-        </div>
+        {projects?.map((project) => <ProjectItem project={project} />)}
       </Slider>
     </div>
   );
