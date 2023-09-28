@@ -1,11 +1,5 @@
 import { useState } from "react";
-
-interface Project {
-  id: number;
-  name: string;
-  url: string;
-  img: string;
-}
+import type { Project } from "../../types.ts";
 
 type Props = {
   project: Project;

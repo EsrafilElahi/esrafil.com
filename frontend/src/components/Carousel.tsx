@@ -2,13 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ProjectItem from "./ProjectItem";
-
-interface Project {
-  id: number;
-  name: string;
-  url: string;
-  img: string;
-}
+import type { Project } from "../../types.ts";
 
 type Props = {
   projects: Project[];

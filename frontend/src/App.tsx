@@ -3,13 +3,7 @@ import HeroSvg from "./components/Sections/HeroSvg";
 import Title from "./components/Title";
 import AboutMe from "./components/Sections/AboutMe";
 import Carousel from "./components/Carousel";
-
-interface Project {
-  id: number;
-  name: string;
-  url: string;
-  img: string;
-}
+import type { Project } from "../types.ts";
 
 const App = () => {
   const ref = useRef<HTMLDivElement | null>(null);
