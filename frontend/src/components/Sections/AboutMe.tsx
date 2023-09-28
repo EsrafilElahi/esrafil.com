@@ -19,7 +19,7 @@ const AboutMe = forwardRef((props, ref) => {
 
   return (
     <div className="flex-center flex-col w-full mt-5" ref={divRef}>
-      <h2 className="title">ABOUT ME</h2>
+      <h2 className="title relative lines">ABOUT ME</h2>
       <p className="max-w-3xl text-center leading-8 tracking-wider">
         <p>As a dedicated and adaptable skillled frontend engineer</p>
         <p>

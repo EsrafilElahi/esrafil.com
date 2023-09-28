@@ -4,6 +4,7 @@ import Title from "./components/Title";
 import AboutMe from "./components/Sections/AboutMe";
 import Carousel from "./components/Carousel";
 import Skills from "./components/Sections/Skills.tsx";
+import Experiences from "./components/Sections/Experiences.tsx";
 import type { Project, Skill } from "../types.ts";
 
 const App = () => {
@@ -137,15 +138,21 @@ const App = () => {
       <AboutMe ref={ref} />
 
       {/* Projects */}
-      <div className="p-5 my-24">
-        <h2 className="title">PROJECTS</h2>
+      <div className="p-5 mt-24 mb-10">
+        <h2 className="title relative lines">PROJECTS</h2>
         <Carousel projects={projects} />
       </div>
 
       {/* Skills */}
       <div className="p-5 mb-24">
-        <h2 className="title pb-8">SKILLS</h2>
+        <h2 className="title pb-7 relative lines">SKILLS</h2>
         <Skills skills={skills} />
+      </div>
+
+      {/* Experiences */}
+      <div className="p-5 mb-24">
+        <h2 className="title pb-7 relative lines">Experiences</h2>
+        <Experiences />
       </div>
     </div>
   );
