@@ -16,27 +16,29 @@
 }
 
 @layer components {
-	h1 {
-		font-size: 1.7rem;
-		@media screen and (max-width: 660px) {
-			font-size: 1.3rem;
-		}
-	}
-	a {
-		text-decoration: none;
-		color: inherit
-	}
+  h1 {
+    font-size: 1.7rem;
+    @media screen and (max-width: 660px) {
+      font-size: 1.3rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 @layer utilities {
-	.flex-center {
-		@apply flex justify-center items-center;
-	}
-	.flex-between {
-		@apply flex justify-between items-center;
-	}
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .btn-outline {
+    @apply py-2 px-5 border border-solid border-blue-light hover:border-blue transition-all rounded-md;
+  }
 }
-
 
 html body {
   width: 100%;

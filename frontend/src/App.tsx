@@ -12,7 +12,7 @@ function App() {
       <div className="absolute top-[35%] left-[5%]">
         <h1 className="text-8xl">Esrafil Elahi</h1>
         <h2 className="text-4xl mt-1 mb-5">Senior Frontend Engineer</h2>
-        <button className="btn">About Me</button>
+        <button className="btn-outline">About Me</button>
         {/* <p className="max-w-lg">
           As a dedicated and adaptable skillled frontend engineer, I'm currently
           pursuing my master's degree in software engineering. With a strong
