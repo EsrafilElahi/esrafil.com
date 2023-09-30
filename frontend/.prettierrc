@@ -1,0 +1,20 @@
+{
+	"useTabs": true,
+	"bracketSpacing": true,
+	"printWidth": 300,
+	"tabWidth": 2,
+	"trailingComma": "es5",
+	"jsxSingleQuote": true,
+	"organizeImportsSkipDestructiveCodeActions": true,
+	"semi": true,
+	"singleQuote": true,
+	"plugins": ["prettier-plugin-organize-imports"],
+	"overrides": [
+		{
+			"files": ["**/*.ts", "**/*.tsx"],
+			"options": {
+				"plugins": ["prettier-plugin-organize-imports"]
+			}
+		}
+	]
+}
