@@ -164,7 +164,7 @@ const App = () => {
 			{/* Hero */}
 			<div className='relative'>
 				<HeroSvg />
-				<img src='/images/me.png' className='w-[15%] h-[40%] absolute right-[18%] bottom-[15%]' />
+				<img src='/images/me.png' className='w-[13%] h-[30%] md:h-[40%] absolute right-[20%] bottom-[2%]' />
 				<Title handleScroll={handleScroll} />
 			</div>
 
@@ -172,7 +172,7 @@ const App = () => {
 			<AboutMe ref={ref} />
 
 			{/* Projects */}
-			<div className='p-5 mt-10 lg:mt-24 mb-10'>
+			<div className='p-5 mt-10 lg:mt-24'>
 				<h2 className='title relative lines'>PROJECTS</h2>
 				<Carousel projects={projects} />
 			</div>

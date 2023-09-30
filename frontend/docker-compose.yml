@@ -10,12 +10,12 @@ services:
     container_name: front-dev-container
     restart: unless-stopped
     ports:
-      - '5173:5173'
+      - '3000:3000'
     networks:
       - frontend
     env_file:
       - .env
-    volumes:
+    volumes:  
       - type: bind
         source: ./
         target: /app

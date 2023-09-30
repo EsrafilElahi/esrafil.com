@@ -16,7 +16,7 @@ const Carousel = (props: Props) => {
 
 	const settings = {
 		infinite: true,
-		slidesToShow: 3,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		autoplay: true,
 		speed: 3000,
@@ -24,17 +24,17 @@ const Carousel = (props: Props) => {
 		cssEase: 'linear',
 		responsive: [
 			{
-				breakpoint: 1024,
+				breakpoint: 976,
 				settings: {
 					slidesToShow: 3,
-					slidesToScroll: 3,
+					slidesToScroll: 1,
 					infinite: true,
 				},
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 					slidesToScroll: 1,
 					infinite: true,
 				},
@@ -51,7 +51,7 @@ const Carousel = (props: Props) => {
 	};
 
 	return (
-		<div className='w-full p-10 overflow-hidden'>
+		<div className='w-full p-5 overflow-hidden'>
 			<Slider {...settings}>
 				{projects?.map((project) => (
 					<Suspense key={project.id} fallback={<Fallback />}>
