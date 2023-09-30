@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ProjectItem from "./ProjectItem";
 import type { Project } from "../../types.ts";
+import ProjectItemSkeleton from "./ProjectItemSkeleton.tsx";
 
 type Props = {
   projects: Project[];
@@ -50,9 +51,7 @@ const Carousel = (props: Props) => {
   return (
     <div className="w-full p-10 overflow-hidden">
       <Slider {...settings}>
-        {projects?.map((project) => (
-          <ProjectItem key={project.id} project={project} />
-        ))}
+        {projects?.map((project) => <ProjectItemSkeleton key={project.id} />)}
       </Slider>
     </div>
   );
