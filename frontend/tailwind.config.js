@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
       mobile: { max: "300px" },
@@ -13,8 +12,8 @@ export default {
       xl: "1440px",
     },
     colors: {
-      'blue': '#4D61FC',
-      'blue-light': '#8AABFF',
+      blue: "#4D61FC",
+      "blue-light": "#8AABFF",
     },
     extend: {},
   },
@@ -26,4 +25,4 @@ export default {
       ); // instead of hard-coded 640px use sm breakpoint value from config. Or anything
     }),
   ],
-}
+};
