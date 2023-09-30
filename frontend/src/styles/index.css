@@ -39,7 +39,7 @@
     @apply py-1 px-3 md:py-2 md:px-5 border border-solid border-blue-light hover:border-blue transition-all rounded-md;
   }
   .title {
-    @apply flex-center text-4xl mt-1 mb-5;
+    @apply flex-center text-4xl mt-1 mb-5 xs-only:text-[7vmin] whitespace-nowrap;
   }
   .lines {
     @apply before:w-24 before:h-[1px] before:bg-blue-light before:top-0 before:left-0 before:mr-3 after:w-24 after:h-[1px] after:bg-blue-light after:top-0 after:right-0 after:ml-3;
