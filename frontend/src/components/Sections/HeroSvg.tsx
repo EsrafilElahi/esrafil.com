@@ -7,7 +7,7 @@ const HeroSvg = () => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 100 1440 800"
       >
-        <g clip-path="url(#eQvhfYWtrG2292)">
+        <g clipPath="url(#eQvhfYWtrG2292)">
           <g>
             <path
               d="M-6.77771,800c.00022-431-.50014-429-.00018-800C457.598,-0.000002,1015.58,0.000143,1700.22,0c0,233.691,0,519.89,0,800h-1446.99771Z"
