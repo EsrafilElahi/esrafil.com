@@ -1,24 +1,37 @@
 version: '3.9'
 
 services:
-  # Development Service
   dev:
     build:
       context: .
-      # target: dev
+      target: dev
       dockerfile: Dockerfile
     container_name: front-dev-container
     restart: unless-stopped
     ports:
-      - '3000:3000'
+      - '80:5173'
     networks:
       - frontend
     env_file:
       - .env
-    volumes:  
-      - type: bind
-        source: ./
-        target: /app
-        
+    volumes:
+      - ./:/app
+
+  preview:
+    build:
+      context: .
+      target: preview
+      dockerfile: Dockerfile
+    container_name: front-preview-container
+    restart: unless-stopped
+    ports:
+      - '83:4173'
+    networks:
+      - frontend
+    env_file:
+      - .env
+    # volumes:
+    #   - ./:/app
+
 networks:
   frontend:

@@ -1,22 +1,47 @@
 # ======================================== Stage 1: install dependencies
-# FROM node:20-alpine3.17 as deps
-FROM node:20-alpine3.17
+FROM node:20-alpine3.17 as deps
 
 WORKDIR /app
 
 COPY package.json pnpm-lock.yaml ./
 
-# RUN npm install -g pnpm && pnpm install --frozen-lockfile
-RUN npm install -g pnpm && pnpm install
+RUN npm install -g pnpm && pnpm install --prod --frozen-lockfile --fix-lockfile
 
-# ======================================== Stage 1: dev mode
-# Stage 2: run app in dev mode
-# FROM deps AS dev
+# ======================================== Stage 2: run dev mode
+FROM deps AS dev
+
+WORKDIR /app
+
+COPY --from=deps /app/node_modules ./node_modules
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 5173
 
 CMD [ "pnpm", "run", "dev" ]
 
+# ======================================== Stage 3: build app
+FROM deps as builder
 
+WORKDIR /app
+
+COPY --from=deps /app/node_modules ./node_modules
+
+COPY . .
+
+RUN pnpm add typescript
+
+RUN pnpm run build
+
+# ======================================== Stage 4: preview app locally
+FROM builder as preview
+
+WORKDIR /app
+
+COPY --from=builder /app/node_modules ./node_modules
+
+COPY . .
+
+EXPOSE 4173
+
+CMD [ "pnpm", "run", "preview" ]
