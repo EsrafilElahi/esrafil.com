@@ -8,12 +8,11 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
 	server: {
 		host: '0.0.0.0',
-		port: 3000,
+		port: 5173,
 	},
-	// preview: {
-	// 	host: true,
-	// 	port: 3000,
-	// },
+	preview: {
+		port: 4173,
+	  },
 	plugins: [react(), svgr()],
 	test: {
 		globals: true,
