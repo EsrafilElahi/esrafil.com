@@ -1,20 +1,20 @@
 {
-	"useTabs": true,
-	"bracketSpacing": true,
-	"printWidth": 120,
-	"tabWidth": 2,
-	"trailingComma": "es5",
-	"jsxSingleQuote": true,
-	"semi": true,
-	"singleQuote": true,
-	"organizeImportsSkipDestructiveCodeActions": true,
-	"plugins": ["prettier-plugin-organize-imports"],
-	"overrides": [
-		{
-			"files": ["**/*.ts", "**/*.tsx"],
-			"options": {
-				"plugins": ["prettier-plugin-organize-imports"]
-			}
-		}
-	]
+  "useTabs": false,
+  "bracketSpacing": true,
+  "printWidth": 130,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "jsxSingleQuote": true,
+  "semi": true,
+  "singleQuote": true,
+  "organizeImportsSkipDestructiveCodeActions": true,
+  "plugins": ["prettier-plugin-organize-imports"],
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "options": {
+        "plugins": ["prettier-plugin-organize-imports"]
+      }
+    }
+  ]
 }
