@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+  # Development Service
+  dev:
+    build:
+      context: .
+      # target: dev
+      dockerfile: Dockerfile
+    container_name: front-dev-container
+    restart: unless-stopped
+    ports:
+      - '5173:5173'
+    networks:
+      - frontend
+    env_file:
+      - .env
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+        
+networks:
+  frontend:

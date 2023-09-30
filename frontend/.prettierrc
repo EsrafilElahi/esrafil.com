@@ -1,13 +1,13 @@
 {
 	"useTabs": true,
 	"bracketSpacing": true,
-	"printWidth": 300,
+	"printWidth": 120,
 	"tabWidth": 2,
 	"trailingComma": "es5",
 	"jsxSingleQuote": true,
-	"organizeImportsSkipDestructiveCodeActions": true,
 	"semi": true,
 	"singleQuote": true,
+	"organizeImportsSkipDestructiveCodeActions": true,
 	"plugins": ["prettier-plugin-organize-imports"],
 	"overrides": [
 		{

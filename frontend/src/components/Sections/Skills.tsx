@@ -1,25 +1,25 @@
-import React, { lazy, Suspense } from "react";
-import type { Skill } from "../../../types.ts";
-import Fallback from "../Fallback.tsx";
+import React, { lazy, Suspense } from 'react';
+import type { Skill } from '../../../types.ts';
+import Fallback from '../Fallback.tsx';
 
-const SkillItem = lazy(() => import("../SkillItem.tsx"));
+const SkillItem = lazy(() => import('../SkillItem.tsx'));
 
 type Props = {
-  skills: Skill[];
+	skills: Skill[];
 };
 
 const Skills = (props: Props) => {
-  const { skills } = props;
+	const { skills } = props;
 
-  return (
-    <div className="flex-center flex-wrap gap-10">
-      {skills.map((skill) => (
-        <Suspense key={skill.id} fallback={<Fallback />}>
-          <SkillItem skill={skill} />
-        </Suspense>
-      ))}
-    </div>
-  );
+	return (
+		<div className='flex-center flex-wrap gap-10'>
+			{skills.map((skill) => (
+				<Suspense key={skill.id} fallback={<Fallback />}>
+					<SkillItem skill={skill} />
+				</Suspense>
+			))}
+		</div>
+	);
 };
 
 export default Skills;
