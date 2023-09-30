@@ -175,19 +175,19 @@ const App = () => {
       <AboutMe ref={ref} />
 
       {/* Projects */}
-      <div className="p-5 mt-24 mb-10">
+      <div className="p-5 mt-10 lg:mt-24 mb-10">
         <h2 className="title relative lines">PROJECTS</h2>
         <Carousel projects={projects} />
       </div>
 
       {/* Skills */}
-      <div className="p-5 mt-24 mb-10">
+      <div className="p-5 mt-10 lg:mt-24 mb-10">
         <h2 className="title pb-7 relative lines">SKILLS</h2>
         <Skills skills={skills} />
       </div>
 
       {/* Experiences */}
-      <div className="p-5 mt-24 mb-10">
+      <div className="p-5 mt-10 lg:mt-24 mb-10">
         <h2 className="title pb-7 relative lines">EXPERIENCES</h2>
         <Experiences experiences={experiences} />
       </div>

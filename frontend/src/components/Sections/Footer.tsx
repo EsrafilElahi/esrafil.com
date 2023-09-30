@@ -15,7 +15,7 @@ const Footer = () => {
       <div>
         <p>Developed By Esrafil Elahi</p>
       </div>
-      <div>
+      <div className="xs-only:hidden">
         <p>Copyright © esrafil.elahi@gmail.com 2023 All Rights Reserved</p>
       </div>
       <div className="flex gap-3">
