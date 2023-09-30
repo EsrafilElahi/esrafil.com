@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import HeroSvg from "./components/Sections/HeroSvg";
 import Title from "./components/Title";
 import AboutMe from "./components/Sections/AboutMe";
