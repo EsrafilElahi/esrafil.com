@@ -15,7 +15,7 @@ const ProjectItem = (props: Props) => {
 
   return (
     <div
-      className="mx-8 cursor-pointer relative rounded-xl w-[20rem] h-full"
+      className="cursor-pointer relative rounded-xl w-[20rem] h-full"
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

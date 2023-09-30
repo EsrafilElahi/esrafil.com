@@ -19,6 +19,32 @@ const Carousel = (props: Props) => {
     speed: 3000,
     autoplaySpeed: 10,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+    ],
   };
 
   return (
