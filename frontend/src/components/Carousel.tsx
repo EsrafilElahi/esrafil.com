@@ -1,9 +1,11 @@
+import React, { lazy, Suspense } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import ProjectItem from "./ProjectItem";
+import Fallback from "./Fallback.tsx";
 import type { Project } from "../../types.ts";
-import ProjectItemSkeleton from "./ProjectItemSkeleton.tsx";
+
+const ProjectItem = lazy(() => import("./ProjectItem"));
 
 type Props = {
   projects: Project[];
@@ -51,7 +53,11 @@ const Carousel = (props: Props) => {
   return (
     <div className="w-full p-10 overflow-hidden">
       <Slider {...settings}>
-        {projects?.map((project) => <ProjectItemSkeleton key={project.id} />)}
+        {projects?.map((project) => (
+          <Suspense key={project.id} fallback={<Fallback />}>
+            <ProjectItem project={project} />
+          </Suspense>
+        ))}
       </Slider>
     </div>
   );
