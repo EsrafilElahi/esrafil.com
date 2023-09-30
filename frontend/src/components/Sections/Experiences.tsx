@@ -4,19 +4,19 @@ import type { Experience } from '../../../types.ts';
 import ExperienceItem from '../ExperienceItem.tsx';
 
 type Props = {
-	experiences: Experience[];
+  experiences: Experience[];
 };
 
 const Experiences = (props: Props) => {
-	const { experiences } = props;
+  const { experiences } = props;
 
-	return (
-		<VerticalTimeline>
-			{experiences.map((experience) => (
-				<ExperienceItem key={experience.id} experience={experience} />
-			))}
-		</VerticalTimeline>
-	);
+  return (
+    <VerticalTimeline>
+      {experiences.map((experience) => (
+        <ExperienceItem key={experience.id} experience={experience} />
+      ))}
+    </VerticalTimeline>
+  );
 };
 
 export default Experiences;
