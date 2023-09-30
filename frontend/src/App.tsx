@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import type { Experience, Project, Skill } from '../types.ts';
 import Carousel from './components/Carousel';
 import GoToTop from './components/GoToTop.tsx';
@@ -10,190 +10,190 @@ import Skills from './components/Sections/Skills.tsx';
 import Title from './components/Title';
 
 const App = () => {
-	const ref = useRef<HTMLDivElement | null>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
 
-	const handleScroll = () => {
-		ref.current?.scroll();
-	};
+  const handleScroll = () => {
+    ref.current?.scroll();
+  };
 
-	const projects: Project[] = [
-		{
-			id: 1,
-			name: 'clinic ghodad',
-			url: 'https://app.clinicghodad.com',
-			img: '/images/p1.jpg',
-		},
-		{
-			id: 2,
-			name: 'project 1',
-			url: 'https://app.clinicghodad.com',
-			img: '/images/p2.jpg',
-		},
-		{
-			id: 3,
-			name: 'project 3',
-			url: 'https://app.clinicghodad.com',
-			img: '/images/p1.jpg',
-		},
-		{
-			id: 4,
-			name: 'project 4',
-			url: 'https://app.clinicghodad.com',
-			img: '/images/p1.jpg',
-		},
-		{
-			id: 5,
-			name: 'project 5',
-			url: 'https://app.clinicghodad.com',
-			img: '/images/p2.jpg',
-		},
-		{
-			id: 6,
-			name: 'project 6',
-			url: 'https://app.clinicghodad.com',
-			img: '/images/p2.jpg',
-		},
-		{
-			id: 7,
-			name: 'project 7',
-			url: 'https://app.clinicghodad.com',
-			img: '/images/p1.jpg',
-		},
-	];
+  const projects: Project[] = [
+    {
+      id: 1,
+      name: 'clinic ghodad',
+      url: 'https://app.clinicghodad.com',
+      img: '/images/p1.jpg',
+    },
+    {
+      id: 2,
+      name: 'project 1',
+      url: 'https://app.clinicghodad.com',
+      img: '/images/p2.jpg',
+    },
+    {
+      id: 3,
+      name: 'project 3',
+      url: 'https://app.clinicghodad.com',
+      img: '/images/p1.jpg',
+    },
+    {
+      id: 4,
+      name: 'project 4',
+      url: 'https://app.clinicghodad.com',
+      img: '/images/p1.jpg',
+    },
+    {
+      id: 5,
+      name: 'project 5',
+      url: 'https://app.clinicghodad.com',
+      img: '/images/p2.jpg',
+    },
+    {
+      id: 6,
+      name: 'project 6',
+      url: 'https://app.clinicghodad.com',
+      img: '/images/p2.jpg',
+    },
+    {
+      id: 7,
+      name: 'project 7',
+      url: 'https://app.clinicghodad.com',
+      img: '/images/p1.jpg',
+    },
+  ];
 
-	const skills: Skill[] = [
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 2,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-		{
-			id: 1,
-			icon: '/assets/react.svg',
-			name: 'React',
-		},
-	];
+  const skills: Skill[] = [
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 2,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+    {
+      id: 1,
+      icon: '/assets/react.svg',
+      name: 'React',
+    },
+  ];
 
-	const experiences: Experience[] = [
-		{
-			id: 1,
-			startDate: 'July 2019',
-			endDate: 'Agu 2020',
-			corp: 'Aytronik corp',
-			position: 'frontend developer',
-			desc: 'lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag',
-		},
-		{
-			id: 2,
-			startDate: 'Agu 2020',
-			endDate: 'Feb 2021',
-			corp: 'Shams uni',
-			position: 'frontend reactjs | nextjs | typescript developer',
-			desc: 'lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag',
-		},
-		{
-			id: 3,
-			startDate: 'Feb 2021',
-			endDate: 'Mar 2022',
-			corp: 'Avaaz Marketing corp',
-			position: 'senior frontend developer',
-			desc: 'lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag',
-		},
-		{
-			id: 4,
-			startDate: 'Mar 2022',
-			endDate: 'Sep 2023',
-			corp: 'Avaaztech corp',
-			position: 'senior frontend engineer',
-			desc: 'lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag',
-		},
-	];
+  const experiences: Experience[] = [
+    {
+      id: 1,
+      startDate: 'July 2019',
+      endDate: 'Agu 2020',
+      corp: 'Aytronik corp',
+      position: 'frontend developer',
+      desc: 'lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag',
+    },
+    {
+      id: 2,
+      startDate: 'Agu 2020',
+      endDate: 'Feb 2021',
+      corp: 'Shams uni',
+      position: 'frontend reactjs | nextjs | typescript developer',
+      desc: 'lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag',
+    },
+    {
+      id: 3,
+      startDate: 'Feb 2021',
+      endDate: 'Mar 2022',
+      corp: 'Avaaz Marketing corp',
+      position: 'senior frontend developer',
+      desc: 'lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag',
+    },
+    {
+      id: 4,
+      startDate: 'Mar 2022',
+      endDate: 'Sep 2023',
+      corp: 'Avaaztech corp',
+      position: 'senior frontend engineer',
+      desc: 'lorem ipsum dolor sit amet, consectetur adip proident et non proident consequat, sed do eiusmod tempor incididunt ut labore et dolore mag',
+    },
+  ];
 
-	return (
-		<div>
-			{/* Hero */}
-			<div className='relative'>
-				<HeroSvg />
-				<img src='/images/me.png' className='w-[13%] h-[30%] md:h-[40%] absolute right-[20%] bottom-[2%]' />
-				<Title handleScroll={handleScroll} />
-			</div>
+  return (
+    <div>
+      {/* Hero */}
+      <div className='relative'>
+        <HeroSvg />
+        <img src='/images/me.png' className='w-[13%] h-[30%] md:h-[40%] absolute right-[20%] bottom-[2%]' />
+        <Title handleScroll={handleScroll} />
+      </div>
 
-			{/* About Me */}
-			<AboutMe ref={ref} />
+      {/* About Me */}
+      <AboutMe ref={ref} />
 
-			{/* Projects */}
-			<div className='p-5 mt-10 lg:mt-24'>
-				<h2 className='title relative lines'>PROJECTS</h2>
-				<Carousel projects={projects} />
-			</div>
+      {/* Projects */}
+      <div className='p-5 mt-10 lg:mt-24'>
+        <h2 className='title relative lines'>PROJECTS</h2>
+        <Carousel projects={projects} />
+      </div>
 
-			{/* Skills */}
-			<div className='p-5 mt-10 lg:mt-24 mb-10'>
-				<h2 className='title pb-7 relative lines'>SKILLS</h2>
-				<Skills skills={skills} />
-			</div>
+      {/* Skills */}
+      <div className='p-5 mt-10 lg:mt-24 mb-10'>
+        <h2 className='title pb-7 relative lines'>SKILLS</h2>
+        <Skills skills={skills} />
+      </div>
 
-			{/* Experiences */}
-			<div className='p-5 mt-10 lg:mt-24 mb-10'>
-				<h2 className='title pb-7 relative lines'>EXPERIENCES</h2>
-				<Experiences experiences={experiences} />
-			</div>
+      {/* Experiences */}
+      <div className='p-5 mt-10 lg:mt-24 mb-10'>
+        <h2 className='title pb-7 relative lines'>EXPERIENCES</h2>
+        <Experiences experiences={experiences} />
+      </div>
 
-			{/* Footer */}
-			<Footer />
-			<GoToTop />
-		</div>
-	);
+      {/* Footer */}
+      <Footer />
+      <GoToTop />
+    </div>
+  );
 };
 
 export default App;
