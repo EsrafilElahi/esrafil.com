@@ -6,8 +6,8 @@ import Carousel from "./components/Carousel";
 import Skills from "./components/Sections/Skills.tsx";
 import Experiences from "./components/Sections/Experiences.tsx";
 import Footer from "./components/Sections/Footer.tsx";
-import type { Project, Skill, Experience } from "../types.ts";
 import GoToTop from "./components/GoToTop.tsx";
+import type { Project, Skill, Experience } from "../types.ts";
 
 const App = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -192,8 +192,9 @@ const App = () => {
         <Experiences experiences={experiences} />
       </div>
 
-      <GoToTop />
+      {/* Footer */}
       <Footer />
+      <GoToTop />
     </div>
   );
 };
