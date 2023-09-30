@@ -36,7 +36,7 @@
     @apply flex justify-between items-center;
   }
   .btn-outline {
-    @apply py-2 px-5 border border-solid border-blue-light hover:border-blue transition-all rounded-md;
+    @apply py-1 px-3 md:py-2 md:px-5 border border-solid border-blue-light hover:border-blue transition-all rounded-md;
   }
   .title {
     @apply flex-center text-4xl mt-1 mb-5;
