@@ -1,6 +1,8 @@
-import React from "react";
-import type { Project, Skill } from "../../../types.ts";
-import SkillItem from "../SkillItem.tsx";
+import React, { lazy, Suspense } from "react";
+import type { Skill } from "../../../types.ts";
+import Fallback from "../Fallback.tsx";
+
+const SkillItem = lazy(() => import("../SkillItem.tsx"));
 
 type Props = {
   skills: Skill[];
@@ -12,7 +14,9 @@ const Skills = (props: Props) => {
   return (
     <div className="flex-center flex-wrap gap-10">
       {skills.map((skill) => (
-        <SkillItem key={skill.id} skill={skill} />
+        <Suspense key={skill.id} fallback={<Fallback />}>
+          <SkillItem skill={skill} />
+        </Suspense>
       ))}
     </div>
   );
