@@ -9,7 +9,7 @@ const SkillItem = (props: Props) => {
   const { icon, name } = props.skill;
 
   return (
-    <div className='flex-center gap-2 flex-[0_0_19%]'>
+    <div className='flex-center gap-2 flex-[0_0_10%]'>
       <img src={icon} alt={name} />
       <span>{name}</span>
     </div>
