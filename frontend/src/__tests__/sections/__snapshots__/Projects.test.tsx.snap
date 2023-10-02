@@ -1,0 +1,1578 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Carousel Component > Carousel snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="w-full p-5 md:p-10 overflow-hidden"
+      >
+        <div
+          class="slick-slider slick-initialized"
+          dir="ltr"
+        >
+          <button
+            class="slick-arrow slick-prev"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Previous
+          </button>
+          <div
+            class="slick-list"
+          >
+            <div
+              class="slick-track"
+              style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+            >
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-4"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-3"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-2"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-1"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active slick-current"
+                data-index="0"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="1"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="2"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="3"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="4"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="5"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="6"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="7"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="8"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="9"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="10"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="11"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="12"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="13"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="w-full p-5 md:p-10 overflow-hidden"
+      >
+        <div
+          class="slick-slider slick-initialized"
+          dir="ltr"
+        >
+          <button
+            class="slick-arrow slick-prev"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Previous
+          </button>
+          <div
+            class="slick-list"
+          >
+            <div
+              class="slick-track"
+              style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+            >
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-4"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-3"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-2"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-1"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active slick-current"
+                data-index="0"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="1"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="2"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="3"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="4"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="5"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="6"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="7"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="8"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="9"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="10"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="11"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="12"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="13"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="px-8"
+                  >
+                    <span
+                      aria-busy="true"
+                      aria-live="polite"
+                    >
+                      <span
+                        class="react-loading-skeleton"
+                        style="height: 250px; --highlight-color: #bbbabdb8;"
+                      >
+                        ‌
+                      </span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="w-full p-5 md:p-10 overflow-hidden"
+    >
+      <div
+        class="slick-slider slick-initialized"
+        dir="ltr"
+      >
+        <button
+          class="slick-arrow slick-prev"
+          data-role="none"
+          style="display: block;"
+          type="button"
+        >
+           
+          Previous
+        </button>
+        <div
+          class="slick-list"
+        >
+          <div
+            class="slick-track"
+            style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+          >
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="-4"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="-3"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="-2"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="-1"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="false"
+              class="slick-slide slick-active slick-current"
+              data-index="0"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="false"
+              class="slick-slide slick-active"
+              data-index="1"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="false"
+              class="slick-slide slick-active"
+              data-index="2"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="false"
+              class="slick-slide slick-active"
+              data-index="3"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="4"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="5"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="6"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="7"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="8"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="9"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="10"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="11"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="12"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="13"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  class="px-8"
+                >
+                  <span
+                    aria-busy="true"
+                    aria-live="polite"
+                  >
+                    <span
+                      class="react-loading-skeleton"
+                      style="height: 250px; --highlight-color: #bbbabdb8;"
+                    >
+                      ‌
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="slick-arrow slick-next"
+          data-role="none"
+          style="display: block;"
+          type="button"
+        >
+           
+          Next
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
