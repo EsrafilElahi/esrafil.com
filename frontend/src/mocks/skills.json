@@ -1,5 +1,47 @@
 [
   {
-    "id": 1
+    "id": 1,
+    "icon": "/assets/react.svg",
+    "name": "React"
+  },
+  {
+    "id": 2,
+    "icon": "/assets/react.svg",
+    "name": "React"
+  },
+  {
+    "id": 3,
+    "icon": "/assets/react.svg",
+    "name": "React"
+  },
+  {
+    "id": 4,
+    "icon": "/assets/react.svg",
+    "name": "React"
+  },
+  {
+    "id": 5,
+    "icon": "/assets/react.svg",
+    "name": "React"
+  },
+  {
+    "id": 6,
+    "icon": "/assets/react.svg",
+    "name": "React"
+  },
+  {
+    "id": 7,
+    "icon": "/assets/react.svg",
+    "name": "React"
+  },
+  {
+    "id": 8,
+    "icon": "/assets/react.svg",
+    "name": "React"
+  },
+  {
+    "id": 9,
+    "icon": "/assets/react.svg",
+    "name": "React"
   }
 ]
