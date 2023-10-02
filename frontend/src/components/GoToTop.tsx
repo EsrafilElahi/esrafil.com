@@ -25,6 +25,7 @@ const GoToTop = () => {
 
   return (
     <Arrow
+      role='img'
       className={`${scrollY < 415 && 'hidden'} w-9 h-9 cursor-pointer fixed bottom-[8%] md:bottom-[11%] right-10`}
       onClick={goToTop}
     />

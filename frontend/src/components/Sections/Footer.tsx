@@ -19,10 +19,15 @@ const Footer = () => {
         <p>Copyright © esrafil.elahi@gmail.com 2023 All Rights Reserved</p>
       </div>
       <div className='flex gap-3'>
-        <Email className='w-8 h-8 cursor-pointer' onClick={() => handleClickLink('mailto:esrafil.elahi@gmail.com')} />
-        <Github className='w-8 h-8 cursor-pointer' onClick={() => handleClickLink('https://github.com/esrafilelahi')} />
-        <Gitlab className='w-8 h-8 cursor-pointer' onClick={() => handleClickLink('https://gitlab.com/esrafil')} />
+        <Email role='img' className='w-8 h-8 cursor-pointer' onClick={() => handleClickLink('mailto:esrafil.elahi@gmail.com')} />
+        <Github
+          role='img'
+          className='w-9 h-9 cursor-pointer'
+          onClick={() => handleClickLink('https://github.com/esrafilelahi')}
+        />
+        <Gitlab role='img' className='w-8 h-8 cursor-pointer' onClick={() => handleClickLink('https://gitlab.com/esrafil')} />
         <Linkedin
+          role='img'
           className='w-8 h-8 cursor-pointer'
           onClick={() => handleClickLink('https://www.linkedin.com/in/esrafil-elahi/')}
         />
