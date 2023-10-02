@@ -1,7 +1,7 @@
 import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import { afterEach, beforeEach, describe, test } from 'vitest';
-import Carousel from '../../components/Carousel';
-import mockProjects from '../../mocks/projects.json';
+import Carousel from '../components/Carousel';
+import mockProjects from '../mocks/projects.json';
 
 window.open = vi.fn();
 
