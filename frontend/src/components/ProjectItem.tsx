@@ -14,7 +14,7 @@ const ProjectItem = (props: Props) => {
   };
 
   return (
-    <div
+    <article
       className='cursor-pointer relative rounded-xl w-[15rem]'
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
@@ -34,7 +34,7 @@ const ProjectItem = (props: Props) => {
       >
         {url}
       </a>
-    </div>
+    </article>
   );
 };
 
