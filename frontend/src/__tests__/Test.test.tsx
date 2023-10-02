@@ -1,28 +1,24 @@
 import { cleanup, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, test } from 'vitest';
-import App from '../App';
 import Title from '../components/Title';
 
-describe('Title', () => {
-  afterEach(() => {
-    cleanup();
-  });
+afterEach(() => {
+  cleanup();
+});
 
-  // beforeEach(() => {
-  //   render(<App />);
-  // });
+beforeEach(() => {
+  render(<Title handleScroll={vi.fn()} />);
+});
 
-  it('should render hello world', () => {
-    expect(true).toBeTruthy();
-  });
+describe('Title Component', () => {
+  test('2 title and 1 btn exists in document', () => {
+    const nameTitle = screen.getByRole('heading', { name: /Esrafil Elahi/i });
+    const positionTitle = screen.getByRole('heading', { name: /Senior Frontend Engineer/i });
+    const btnAboutMe = screen.getByRole('button');
 
-  test('ttest app', () => {
-    render(<Title handleScroll={vi.fn()} />);
-  });
-
-  it('Should render the page correctly', async () => {
-    const h1 = screen.findByText('hello world');
-    expect(h1).not.toBeNull();
+    expect(nameTitle).toBeInTheDocument();
+    expect(positionTitle).toBeInTheDocument();
+    expect(btnAboutMe).toBeInTheDocument();
   });
 });
