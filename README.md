@@ -18,7 +18,7 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 **Frontend:**
 - Vite 
 - React 
-- TypeScript
+- TypeScript 
 - Docker
 - Tailwind CSS
 - Eslint
