@@ -8,7 +8,7 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 
 **Backend:**
 - Node.js 
-- Express.js
+- Express.js 
 - PostgreSQL
 - Prisma 
 - PM2 
