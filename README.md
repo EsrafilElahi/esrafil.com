@@ -22,6 +22,6 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - Docker 
 - Tailwind CSS 
 - Eslint 
-- React Query
+- React Query 
 - Axios
 - Unit testing, E2E testing
