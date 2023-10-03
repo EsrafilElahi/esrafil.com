@@ -23,5 +23,5 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - Tailwind CSS 
 - Eslint 
 - React Query 
-- Axios
+- Axios 
 - Unit testing, E2E testing 
