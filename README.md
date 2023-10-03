@@ -7,7 +7,7 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 ## Technologies Used
 
 **Backend:**
-- Node.js 
+- Node.js
 - Express.js 
 - PostgreSQL 
 - Prisma
