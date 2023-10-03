@@ -20,7 +20,7 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - React 
 - TypeScript 
 - Docker 
-- Tailwind CSS
+- Tailwind CSS 
 - Eslint
 - React Query
 - Axios
