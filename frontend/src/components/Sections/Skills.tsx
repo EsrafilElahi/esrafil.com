@@ -12,7 +12,7 @@ const Skills = (props: Props) => {
   const { skills } = props;
 
   return (
-    <div className='flex-center flex-wrap gap-10'>
+    <div className='flex-center flex-wrap gap-10' data-testid='skills'>
       {skills.map((skill) => (
         <Suspense key={skill.id} fallback={<Fallback />}>
           <SkillItem skill={skill} />

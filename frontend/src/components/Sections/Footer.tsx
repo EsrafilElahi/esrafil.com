@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <div className='flex-between p-5 border-t-[1px] border-[white]'>
+    <div className='flex-between p-5 border-t-[1px] border-[white]' data-testid='footer'>
       <div>
         <p>Developed By Esrafil Elahi</p>
       </div>
@@ -29,7 +29,7 @@ const Footer = () => {
         <Linkedin
           role='img'
           className='w-8 h-8 cursor-pointer'
-          onClick={() => handleClickLink('https://www.linkedin.com/in/esrafil-elahi/')}
+          onClick={() => handleClickLink('https://www.linkedin.com/in/esrafil-elahi')}
         />
       </div>
     </div>
