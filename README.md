@@ -11,7 +11,7 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - Express.js
 - PostgreSQL
 - Prisma
-- PM2 for monitoring
+- PM2
 - Docker
 - Nginx
 
@@ -22,6 +22,6 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - Docker
 - Tailwind CSS
 - Eslint
-- React Query for caching
-- Axios for API requests
+- React Query
+- Axios
 - Unit testing, E2E testing
