@@ -10,7 +10,7 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - Node.js
 - Express.js
 - PostgreSQL
-- Prisma
+- Prisma 
 - PM2
 - Docker
 - Nginx
