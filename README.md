@@ -16,7 +16,7 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - Nginx 
 
 **Frontend:**
-- Vite
+- Vite 
 - React
 - TypeScript
 - Docker
