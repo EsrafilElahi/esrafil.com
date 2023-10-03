@@ -12,7 +12,7 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - PostgreSQL
 - Prisma 
 - PM2 
-- Docker
+- Docker 
 - Nginx
 
 **Frontend:**
