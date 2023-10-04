@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: esrafil_dev
+      POSTGRES_USER: esrafil
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6380:6379"
+    networks:
+      - app-network
+
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # target: dev
+    # env_file:
+    #   - .env
+    container_name: node-api-container
+    environment:
+      DATABASE_URL: "postgresql://esrafil:1234@postgres:5432/esrafil_dev?schema=public"
+      REDIS_URL: "redis://redis:6380"
+      PORT: 5000
+      REDIS_PORT: 6380
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - .:/app
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres-data:

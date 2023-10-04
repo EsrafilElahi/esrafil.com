@@ -1,18 +1,19 @@
 //? root packages imports
 const express = require("express");
 const cors = require("cors");
-require('dotenv').config();
-
+require("dotenv").config();
 
 //? middlewares imports
 const setHeadersOrigin = require("./middlewares/setHeadersOrigin");
 const corsOrigin = require("./middlewares/corsOrigin");
-const { cachingExperiences, cachingProjects } = require("./middlewares/caching");
+const {
+  cachingExperiences,
+  cachingProjects,
+} = require("./middlewares/caching");
 
 //? routes imports
 const experienceRoute = require("./routes/experience");
 const projectRoute = require("./routes/project");
-
 
 const app = express();
 
@@ -27,12 +28,12 @@ app.get("/", async (req, res, next) => {
   try {
     res.json({ msg: "Home Page" });
   } catch (error) {
-    next(error)
+    next(error);
   }
 });
 
-app.use("/api/experience", cachingExperiences, experienceRoute);
-app.use("/api/project", cachingProjects, projectRoute);
+app.use("/api/experiences", cachingExperiences, experienceRoute);
+app.use("/api/projects", cachingProjects, projectRoute);
 
 app.get("*", (req, res) => {
   res.send("404 not found page");
