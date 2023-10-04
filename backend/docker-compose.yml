@@ -15,12 +15,12 @@ services:
       - postgres-data:/var/lib/postgresql/data
     restart: unless-stopped
 
-  redis:
-    image: redis:alpine
-    ports:
-      - "6380:6379"
-    networks:
-      - app-network
+  # redis:
+  #   image: redis:alpine
+  #   ports:
+  #     - "6379:6379"
+  #   networks:
+  #     - app-network
 
   node-app:
     build:
@@ -32,14 +32,14 @@ services:
     container_name: node-api-container
     environment:
       DATABASE_URL: "postgresql://esrafil:1234@postgres:5432/esrafil_dev?schema=public"
-      REDIS_URL: "redis://redis:6380"
+      # REDIS_URL: "redis://redis:6379"
       PORT: 5000
-      REDIS_PORT: 6380
+      # REDIS_PORT: 6379
     ports:
       - "5000:5000"
     depends_on:
       - postgres
-      - redis
+      # - redis
     volumes:
       - .:/app
     networks:

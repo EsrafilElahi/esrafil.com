@@ -14,7 +14,7 @@ RUN npm install -g pnpm
 
 RUN pnpm install
 
-RUN pnpm add redis
+# RUN pnpm add redis
 
 
 # ================================= stage 2 - dev mode
@@ -28,8 +28,8 @@ COPY . .
 
 EXPOSE 5000
 
-RUN npx prisma migrate
+# RUN npx prisma migrate
 RUN npx prisma generate
 
-CMD ["npx", "prisma","migrate", "dev"]
+# CMD ["npx", "prisma","migrate", "dev"]
 CMD ["pnpm", "run","dev"]
