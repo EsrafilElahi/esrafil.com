@@ -15,12 +15,40 @@ services:
       - postgres-data:/var/lib/postgresql/data
     restart: unless-stopped
 
-  # redis:
-  #   image: redis:alpine
+  redis:
+    image: redis:alpine
+    ports:
+      - "6378:6379"
+    networks:
+      - app-network
+    volumes:
+      - redisDB:/data
+
+  prisma-studio:
+    image: timothyjmiller/prisma-studio:latest
+    restart: unless-stopped
+    ports:
+      - "5555:5555"
+    env_file:
+     - .env
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - app-network
+  # pgadmin:
+  #   image: dpage/pgadmin4
+  #   # container_name: pgadmin
+  #   depends_on:
+  #     - postgres
   #   ports:
-  #     - "6379:6379"
-  #   networks:
-  #     - app-network
+  #     - "5555:80"
+  #   environment:
+  #     PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+  #     PGADMIN_DEFAULT_PASSWORD: admin
+  #   volumes:
+  #     - pgadmin-data:/var/lib/pgadmin
+  #   restart: unless-stopped
 
   node-app:
     build:
@@ -30,16 +58,17 @@ services:
     # env_file:
     #   - .env
     container_name: node-api-container
+    # command: npx prisma studio
     environment:
       DATABASE_URL: "postgresql://esrafil:1234@postgres:5432/esrafil_dev?schema=public"
-      # REDIS_URL: "redis://redis:6379"
+      REDIS_URL: "redis://redis:6378"
       PORT: 5000
-      # REDIS_PORT: 6379
+      REDIS_PORT: 6378
     ports:
       - "5000:5000"
     depends_on:
       - postgres
-      # - redis
+      - redis
     volumes:
       - .:/app
     networks:
@@ -51,3 +80,5 @@ networks:
 
 volumes:
   postgres-data:
+  pgadmin-data:
+  redisDB:

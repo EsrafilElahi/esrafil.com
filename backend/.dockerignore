@@ -8,4 +8,5 @@ Dockerfile      # The dockerfile
 .env-*          # Any other environment that we don't want to include
 .gitlab-*       # Deploying with gitlab ?
 .github         # Using github actions ?
-*.md      
+*.md
+dump.rdb
