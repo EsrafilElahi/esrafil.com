@@ -11,17 +11,17 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - Express.js
 - PostgreSQL
 - Prisma
-- PM2
-- Docker
-- Nginx
+- PM2 
+- Docker 
+- Nginx 
 
 **Frontend:**
-- Vite
-- React
-- TypeScript
-- Docker
-- Tailwind CSS
-- Eslint
-- React Query
-- Axios
-- Unit testing, E2E testing
+- Vite 
+- React 
+- TypeScript 
+- Docker 
+- Tailwind CSS 
+- Eslint 
+- React Query 
+- Axios 
+- Unit testing, E2E testing 
