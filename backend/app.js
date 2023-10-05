@@ -32,8 +32,8 @@ app.get("/", async (req, res, next) => {
   }
 });
 
-app.use("/api/experiences", experienceRoute);
-app.use("/api/projects", projectRoute);
+app.use("/api/experiences", cachingExperiences, experienceRoute);
+app.use("/api/projects", cachingProjects, projectRoute);
 
 app.get("*", (req, res) => {
   res.send("404 not found page");
