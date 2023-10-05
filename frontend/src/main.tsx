@@ -2,14 +2,9 @@ import { QueryClient, QueryClientProvider, QueryFunction, useQuery } from '@tans
 import axios from 'axios';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Project } from '../types.ts';
 import App from './App.tsx';
 import './styles/index.css';
-
-interface Project {
-  id: number;
-  name: string;
-  // Define other properties of your project here
-}
 
 interface ApiResponse {
   projects: Project[];
@@ -18,7 +13,6 @@ interface ApiResponse {
 const fetchProjects: QueryFunction<ApiResponse> = async () => {
   try {
     const response = await axios.get<ApiResponse>(`${import.meta.env.VITE_BACKEND_BASE_URL}/api/projects`);
-    console.log('response: ', response);
     return response.data;
   } catch (error: any) {
     console.log('error fetching projects', error);

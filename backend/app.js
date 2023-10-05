@@ -14,6 +14,7 @@ const {
 //? routes imports
 const experienceRoute = require("./routes/experience");
 const projectRoute = require("./routes/project");
+const skillRoute = require("./routes/skill");
 
 const app = express();
 
@@ -34,6 +35,7 @@ app.get("/", async (req, res, next) => {
 
 app.use("/api/experiences", experienceRoute);
 app.use("/api/projects", projectRoute);
+app.use("/api/skills", skillRoute);
 
 app.get("*", (req, res) => {
   res.send("404 not found page");

@@ -10,6 +10,7 @@ const getAll = async (req, res, next) => {
         title: true,
         link: true,
         description: true,
+        image: true,
         technologies: {
           select: {
             id: true,
