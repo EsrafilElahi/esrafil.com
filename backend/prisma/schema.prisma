@@ -33,6 +33,7 @@ model Project {
   title        String
   link         String
   description  String
+  image        String
   experience   Experience   @relation(fields: [experienceId], references: [id])
   experienceId Int
   technologies Technology[]
@@ -43,6 +44,7 @@ model Technology {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   name      String
+  image     String
   Project   Project? @relation(fields: [projectId], references: [id])
   projectId Int?
 }
