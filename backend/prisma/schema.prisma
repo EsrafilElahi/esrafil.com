@@ -14,8 +14,8 @@ model Experience {
   id              Int             @id @default(autoincrement())
   createdAt       DateTime        @default(now())
   updatedAt       DateTime        @updatedAt
-  startDate       DateTime
-  endDate         DateTime
+  startDate       String
+  endDate         String
   title           String
   description     String
   corporation     String

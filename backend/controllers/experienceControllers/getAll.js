@@ -24,7 +24,7 @@ const getAll = async (req, res, next) => {
 
     const cachedExperiences = await redisClient.get("experiences");
     const parsedExperiences = JSON.parse(cachedExperiences);
-    
+
     console.log("experiences :", experiences);
     console.log("parsedExperiences :", parsedExperiences);
 
