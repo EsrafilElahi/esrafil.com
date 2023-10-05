@@ -22,18 +22,32 @@ const getAll = async (req, res, next) => {
       },
     });
 
+    const cachedExperiences = await redisClient.get("experiences");
+    const parsedExperiences = JSON.parse(cachedExperiences);
+    
+    console.log("experiences :", experiences);
+    console.log("parsedExperiences :", parsedExperiences);
+
     logger.info("fetching expereiences...");
 
-    // set caching
-    redisClient.set("experiences", JSON.stringify(experiences));
-    const oneDay = parseInt(+new Date() / 1000) + 86400;
-    redisClient.expireAt("experiences", oneDay);
+    if (parsedExperiences?.length !== experiences.length) {
+      // set caching
+      redisClient.set("experiences", JSON.stringify(experiences));
+      const oneDay = parseInt(+new Date() / 1000) + 86400;
+      redisClient.expireAt("experiences", oneDay);
 
-    return res.json({
-      message: "experiences",
-      status: 200,
-      experiences: experiences,
-    });
+      return res.json({
+        message: "experiences",
+        status: 200,
+        experiences: experiences,
+      });
+    } else {
+      return res.json({
+        message: "experiences",
+        status: 200,
+        experiences: parsedExperiences,
+      });
+    }
   } catch (error) {
     logger.error(error);
     return res.json({ message: "server error", status: 500, error: error });
