@@ -1,3 +1,4 @@
+import { useQuery } from '@tanstack/react-query';
 import { useRef } from 'react';
 import type { Experience, Project, Skill } from '../types.ts';
 import Carousel from './components/Carousel';
@@ -15,6 +16,9 @@ const App = () => {
   const handleScroll = () => {
     ref.current?.scroll();
   };
+
+  const { isLoading, data: projectsData, error } = useQuery<Project[] | Project>(['projects']);
+  console.log('data in home page :', projectsData);
 
   const projects: Project[] = [
     {
