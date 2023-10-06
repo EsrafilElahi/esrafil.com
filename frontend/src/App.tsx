@@ -1,5 +1,5 @@
-import { useQuery } from '@tanstack/react-query';
-import { useRef } from 'react';
+import axios from 'axios';
+import { useEffect, useRef, useState } from 'react';
 import type { Experience, Project, Skill } from '../types.ts';
 import Carousel from './components/Carousel';
 import GoToTop from './components/GoToTop.tsx';
@@ -13,117 +13,144 @@ import Title from './components/Title';
 const App = () => {
   const ref = useRef<HTMLDivElement | null>(null);
 
+  // const [data, setData] = useState({
+  //   skills: [],
+  //   projects: [],
+  //   experiences: [],
+  // });
+
+  // console.log(data);
+
+  // const fetchData = async () => {
+  //   const pro = await axios.get(`${import.meta.env.VITE_BACKEND_BASE_URL}/api/projects`);
+  //   const exp = await axios.get(`${import.meta.env.VITE_BACKEND_BASE_URL}/api/experiences`);
+  //   const skill = await axios.get(`${import.meta.env.VITE_BACKEND_BASE_URL}/api/skills`);
+
+  //   setData({
+  //     skills: skill.data.skills,
+  //     projects: pro.data.projects,
+  //     experiences: exp.data.experiences,
+  //   });
+  // };
+
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
+
   const handleScroll = () => {
     ref.current?.scroll();
   };
-
-  const { isLoading, data: projectsData, error } = useQuery<Project[] | Project>(['projects']);
-  console.log('data in home page :', projectsData);
 
   const projects: Project[] = [
     {
       id: 1,
       name: 'clinic ghodad',
       url: 'https://app.clinicghodad.com',
-      img: '/images/p1.jpg',
+      img: '/images/',
     },
     {
       id: 2,
-      name: 'project 1',
-      url: 'https://app.clinicghodad.com',
-      img: '/images/p2.jpg',
+      name: 'Avaaztech',
+      url: 'https://avaaztech.com',
+      img: '/images/',
     },
     {
       id: 3,
-      name: 'project 3',
-      url: 'https://app.clinicghodad.com',
-      img: '/images/p1.jpg',
+      name: 'Azki landing page',
+      url: 'https://khodro45.com/landing/azki',
+      img: '/images/',
     },
     {
       id: 4,
-      name: 'project 4',
-      url: 'https://app.clinicghodad.com',
-      img: '/images/p1.jpg',
+      name: 'khodro45 gamification',
+      url: 'https://khodro45.com/landing/personality/',
+      img: '/images/',
     },
     {
       id: 5,
-      name: 'project 5',
-      url: 'https://app.clinicghodad.com',
-      img: '/images/p2.jpg',
+      name: 'Chatal restaurant',
+      url: 'https://chatal-restaurant.vercel.app',
+      img: '/images/',
     },
     {
       id: 6,
-      name: 'project 6',
-      url: 'https://app.clinicghodad.com',
-      img: '/images/p2.jpg',
+      name: 'Next football news',
+      url: 'https://next-football-api.netlify.app/',
+      img: '/images/',
     },
     {
       id: 7,
-      name: 'project 7',
-      url: 'https://app.clinicghodad.com',
-      img: '/images/p1.jpg',
+      name: 'Food recipe',
+      url: 'https://food-recipe-phi.vercel.app',
+      img: '/images/',
+    },
+    {
+      id: 8,
+      name: 'Redux fakeshop',
+      url: 'https://redux-fake-shop.vercel.app',
+      img: '/images/',
     },
   ];
 
   const skills: Skill[] = [
     {
       id: 1,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 2,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 3,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 4,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 5,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 6,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 7,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 8,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 9,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 10,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 11,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
     {
       id: 12,
-      icon: '/assets/react.svg',
+      img: '/assets/react.svg',
       name: 'React',
     },
   ];
