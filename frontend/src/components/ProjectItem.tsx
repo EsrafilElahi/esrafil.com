@@ -19,7 +19,7 @@ const ProjectItem = (props: Props) => {
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <span className={`w-full absolute top-[25%] ${hover ? '' : 'hidden'} transition-all text-center z-20 text-3xl`}>
+      <span className={`w-full absolute top-[25%] ${hover ? '' : 'hidden'} transition-all text-center z-20 text-3xl break-words`}>
         {name}
       </span>
       <img src={img} className='relative rounded-xl' alt={name} />
@@ -29,7 +29,7 @@ const ProjectItem = (props: Props) => {
         } transition-all z-10`}
       ></div>
       <a
-        className={`w-full absolute bottom-[25%] ${hover ? '' : 'hidden'} transition-all text-center z-20 text-xl`}
+        className={`w-full absolute bottom-[25%] ${hover ? '' : 'hidden'} transition-all text-center z-20 text-xl break-words`}
         onClick={() => openLink(url)}
       >
         {url}
