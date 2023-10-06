@@ -7,7 +7,7 @@ export interface Project {
 
 export interface Skill {
   id: number | string;
-  icon: string;
+  img: string;
   name: string;
 }
 
