@@ -9,26 +9,8 @@ type Props = {
   experiences: Experience[];
 };
 
-interface ApiResponse {
-  experiences: Experience[];
-}
-
 const Experiences = (props: Props) => {
   const { experiences } = props;
-
-  const fetchExperiences = async () => {
-    try {
-      const response = await axios.get<ApiResponse>(`${import.meta.env.VITE_BACKEND_BASE_URL}/api/experiences`);
-      return response.data;
-    } catch (error: any) {
-      console.log('error fetching experiences', error);
-      throw new Error(`Error fetching experiences: ${error.message}`);
-    }
-  };
-
-  const result = useQuery({ queryKey: ['experiences'], queryFn: fetchExperiences });
-
-  console.log('result :', result);
 
   return (
     <VerticalTimeline>
