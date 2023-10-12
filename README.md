@@ -13,7 +13,6 @@ This is my personal website built with Node.js, Express.js, and React. It showca
 - Prisma
 - PM2 
 - Docker 
-- Nginx 
 
 **Frontend:**
 - Vite 
